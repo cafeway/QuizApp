@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mayhem.www.quizapp.MainActivity">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:layout_marginLeft="20dp"
+     >
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="1.What is Andorid ?"
+             android:textSize="20sp"
+             android:layout_marginBottom="10dp"
+             />
+         <RadioGroup
+             android:id="@+id/question_one"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <RadioButton
+                 android:id="@+id/one"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="an operating system"
+
+                 />
+             <RadioButton
+                 android:id="@+id/oneB"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="A robot"
+                 android:onClick="onRadioButtonClicked"
+                 />
+             <RadioButton
+                 android:id="@+id/oneC"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="a company"
+                 android:layout_marginBottom="10dp"
+                 android:onClick="onRadioButtonClicked"
+                 />
+
+         </RadioGroup>
+
+
+     <TextView
+         android:id="@+id/question_two"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="2.Select All Answers that apply.An activity is A?"
+         android:textSize="20sp"
+         android:layout_marginBottom="10dp"
+         />
+     <CheckBox
+         android:id="@+id/twoA"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="building block of the user interface is the activity"
+        />
+     <CheckBox
+         android:id="@+id/twoB"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Activities are one of the fundamental building blocks of apps on the Android platform"
+         />
+     <CheckBox
+         android:id="@+id/twoC"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="progressive activity on a screen"
+         android:layout_marginBottom="10dp"
+         />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="3.Which android Layout is this "
+         android:textSize="20sp"
+         android:layout_marginBottom="10dp"
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linear"
+        android:layout_marginBottom="10dp"
+        />
+     <EditText
+         android:id="@+id/threeA"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="text"
+         android:width="200dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="20dp"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:text="4.Select languages used in android development"
+         />
+     <CheckBox
+         android:id="@+id/fourA"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="C++"
+         />
+     <CheckBox
+         android:id="@+id/fourB"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Java"
+         />
+     <CheckBox
+         android:id="@+id/fourC"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Kotlin"
+         android:layout_marginBottom="10dp"
+         />
+     <CheckBox
+         android:id="@+id/fourD"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Ruby"
+         android:layout_marginBottom="10dp"
+         />
+     <CheckBox
+         android:id="@+id/fourE"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Go"
+         android:layout_marginBottom="10dp"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="5.What is an id in android development?"
+         android:textSize="20sp"
+         />
+     <RadioGroup
+         android:id="@+id/question_five"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/fiveA"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="A unique resource name an Element in A view Group"
+             />
+         <RadioButton
+             android:id="@+id/fiveB"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Identification number for an app"
+             />
+         <RadioButton
+             android:id="@+id/fiveC"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="internet domain"
+             />
+     </RadioGroup>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:text="6.what is dp and sp"
+         />
+     <RadioGroup
+         android:id="@+id/question_six"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/sixA"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Scale-independent Pixels and Density-independent Pixels"
+             />
+         <RadioButton
+             android:id="@+id/sixB"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="decapixels and scale pixels"
+             android:layout_marginBottom="10dp"
+             />
+
+     </RadioGroup>
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="submit"
+             android:onClick="submit"
+             />
+
+ </LinearLayout>
+
+
+</ScrollView>
