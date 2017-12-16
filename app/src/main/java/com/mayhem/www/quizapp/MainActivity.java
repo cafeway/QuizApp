@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public CheckBox  Answer4C;
     public RadioGroup QuestionFive;
     public RadioGroup QuestionSix;
-
+    //increment functon
     public void increment_score(){
         Score++;
     }
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         QuestionFive=(RadioGroup)findViewById(R.id.question_five);
         QuestionSix= (RadioGroup)findViewById(R.id.question_six);
     }
-    public void submit(View view){
+    public void grade(View view){
         if (QuestionOne.getCheckedRadioButtonId() == R.id.one) {
             increment_score();
         }
